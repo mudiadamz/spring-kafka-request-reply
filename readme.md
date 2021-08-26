@@ -1,4 +1,4 @@
-# SPRING KAFKA ASYNCHRONOUS SEND-REPLY
+# SPRING KAFKA SYNCHRONOUS SEND-REPLY
 
 ## How to run
 - Start your docker daemon/service
@@ -30,4 +30,4 @@ mvn test
   ![alt text](https://github.com/mudiadamz/spring-kafka-request-reply/blob/main/img/kafka-tool-my-topic-reply.jpg?raw=true)
 
 ## Blogs
-This is a project example from this blog : [Spring Kafka - how to use ReplyingKafkaTemplate send and reply synchronously](https://techgalery.com/)
+This is a project example from this blog : [Spring Kafka - how to use ReplyingKafkaTemplate send and reply synchronously](https://www.techgalery.com/2021/08/spring-kafka-how-to-use.html)
