@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+myproject:
+  send-topics: my-topics
+  reply-topics: my-topics-reply
+  consumer-group: my-kafka-group
