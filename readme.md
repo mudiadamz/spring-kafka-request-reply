@@ -7,6 +7,10 @@
 ```
 docker-compose up -d 
 ```
+- to stop zookeeper and kafka (later)
+```
+docker-compose rm -fsv
+```
 - Start our producer service on the spring-kafka-server
 ```
 cd spring-kafka-server 
