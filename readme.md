@@ -1,4 +1,5 @@
 # SPRING KAFKA SYNCHRONOUS SEND-REPLY
+The spring-kafka-client service will send a string message to the server-project over Kafka, then the spring-kafka-service consumes the message and then reverse the string and produce it back to the client, based on the topic that the client is requesting. 
 
 ## How to run
 - Start your docker daemon/service
