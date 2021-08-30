@@ -21,7 +21,10 @@ public class KafkaConfig {
     public ReplyingKafkaTemplate<String, Object, Object> replyingTemplate(
             ProducerFactory<String, Object> pf,
             ConcurrentMessageListenerContainer<String, Object> repliesContainer) {
-        return new ReplyingKafkaTemplate<>(pf, repliesContainer);
+        ReplyingKafkaTemplate<String, Object, Object> replyTemplate = new ReplyingKafkaTemplate<>(pf, repliesContainer);
+        replyTemplate.setDefaultReplyTimeout(Duration.ofSeconds(10));
+        replyTemplate.setSharedReplyTopic(true);
+        return replyTemplate;
     }
 
     @Bean //register ConcurrentMessageListenerContainer bean
